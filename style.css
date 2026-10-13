@@ -1,0 +1,178 @@
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F7FC;
+    color: #243047;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header and navigation */
+header {
+    background-color: #14213D;
+    color: white;
+    padding: 18px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 40px 0;
+    min-height: 70vh;
+}
+
+.card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgb(0 0 0 / 8%);
+}
+
+h2 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+/* Buttons and links */
+.button {
+    display: inline-block;
+    background-color: #1d4ed8;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #1e40af;
+}
+
+/* Contact form */
+form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+    background-color: white;
+    color: #243047;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.option input {
+    width: auto;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #14213D;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
