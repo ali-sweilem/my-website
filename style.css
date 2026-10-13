@@ -176,3 +176,199 @@ footer p {
         padding: 18px;
     }
 }
+
+
+/* Component Library */
+.component-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.component-card {
+    min-width: 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9E1EF;
+    border-radius: 12px;
+}
+
+.component-card h3 {
+    margin-top: 0;
+    color: #14213D;
+}
+
+.component-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+    .component-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+    .component-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Alerts */
+.alert {
+    padding: 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.alert-success {
+    color: #166534;
+    background-color: #DCFCE7;
+    border-color: #86EFAC;
+}
+
+.alert-warning {
+    color: #854D0E;
+    background-color: #FEF3C7;
+    border-color: #FCD34D;
+}
+
+.alert-error {
+    color: #991B1B;
+    background-color: #FEE2E2;
+    border-color: #FCA5A5;
+}
+
+
+/* CSS-only Modal Window */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    padding: 20px;
+    background-color: rgba(15, 23, 42, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    color: #273449;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #14213D;
+}
+
+.modal-content p {
+    line-height: 1.7;
+}
+
+.modal-content .button {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111827;
+        color: #E5E7EB;
+    }
+
+    header,
+    footer {
+        background-color: #0B1220;
+        color: #F9FAFB;
+    }
+
+    nav a {
+        color: #E5E7EB;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+        color: #FFFFFF;
+    }
+
+    .card,
+    .component-card {
+        background-color: #1F2937;
+        color: #E5E7EB;
+        border-color: #374151;
+    }
+
+    h1,
+    h2,
+    h3,
+    .component-card h3 {
+        color: #F9FAFB;
+    }
+
+    input,
+    select,
+    textarea {
+        background-color: #111827;
+        color: #F9FAFB;
+        border-color: #4B5563;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #9CA3AF;
+    }
+
+    fieldset {
+        border-color: #4B5563;
+    }
+
+    legend,
+    label {
+        color: #E5E7EB;
+    }
+
+    .modal-content {
+        background-color: #1F2937;
+        color: #E5E7EB;
+    }
+
+    .modal-content h2 {
+        color: #F9FAFB;
+    }
+
+    .alert-success {
+        background-color: #14532D;
+        color: #DCFCE7;
+        border-color: #166534;
+    }
+
+    .alert-warning {
+        background-color: #713F12;
+        color: #FEF3C7;
+        border-color: #92400E;
+    }
+
+    .alert-error {
+        background-color: #7F1D1D;
+        color: #FEE2E2;
+        border-color: #991B1B;
+    }
+}

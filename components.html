@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our UI components.">
+    <title>Components | My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <h1>My Website</h1>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="components.html" aria-current="page">Components</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>UI Components</h2>
+            <p>Here are some useful elements you can use on a website.</p>
+
+            <div class="component-grid">
+
+                <div class="component-card">
+                    <h3>Buttons</h3>
+                    <button class="button" type="button">Primary Button</button>
+                </div>
+
+                <div class="component-card">
+                    <h3>Text Input</h3>
+                    <label for="demo-name">Your Name</label>
+                    <input
+                        type="text"
+                        id="demo-name"
+                        placeholder="Enter your name"
+                    >
+                </div>
+
+                <div class="component-card">
+                    <h3>Select Menu</h3>
+                    <label for="demo-subject">Choose a subject</label>
+                    <select id="demo-subject">
+                        <option value="">Select an option</option>
+                        <option value="System">CS 309</option>
+                        <option value="Logic">CS 302</option>
+                    </select>
+                </div>
+
+                <div class="component-card">
+                    <h3>Success Alert</h3>
+                    <div class="alert alert-success" role="status">
+                        Everything looks good!
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h3>Warning Alert</h3>
+                    <div class="alert alert-warning" role="status">
+                        Please check your information.
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h3>Error Alert</h3>
+                    <div class="alert alert-error" role="alert">
+                        Something went wrong.
+                    </div>
+                </div>
+                
+                <div class="component-card">
+                    <h3>Modal Window</h3>
+                    <p>Click the button to open a modal.</p>
+                    <a href="#demo-modal" class="button">Open Modal</a>
+                </div>
+
+                <div id="demo-modal" class="modal">
+                    <div class="modal-content"
+                        role="dialog"
+                        aria-labelledby="modal-title"
+                        aria-describedby="modal-description">
+
+                        <h2 id="modal-title">Welcome!</h2>
+
+                        <p id="modal-description">
+                            Hi ^_^
+                        </p>
+
+                        <a href="#" class="button">Close</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
